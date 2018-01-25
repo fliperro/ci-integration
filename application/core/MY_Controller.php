@@ -464,7 +464,7 @@ class Authenticated_Controller extends MY_Controller {
             redirect('auth/login', 'refresh');
         }
 
-        $data['identity'] = $this->session->userdata('identity');
+        $data['auth_user_identity'] = $this->session->userdata('identity');
         $this->load->vars($data);
     }
 
