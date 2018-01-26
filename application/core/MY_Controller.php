@@ -328,7 +328,7 @@ class MY_Controller extends CI_Controller {
             {
                 $json['fragments'] = array();
             }
-            if ($this->config->item('show_profile'))
+            if ($this->config->item('show_profiler'))
             {
                 $this->load->library('profiler');
                 $json['fragments']['#profiler'] = $this->profiler->run();
